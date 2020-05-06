@@ -50,6 +50,11 @@ FlutterActivityDelegate：
 
 
 ## 渲染流程
+![image](https://github.com/LiangLuDev/flutter_tutorial/blob/master/images/flutter_drawing1.png?raw=true)
+![image](https://github.com/LiangLuDev/flutter_tutorial/blob/master/images/flutter_drawing2.png?raw=true)
+
+- UI线程：运行着UI Task Runner，是Flutter Engine用于执行Dart root isolate代码，将其转换为layer tree视图结构；
+- GPU线程：该线程依然是在CPU上执行，运行着GPU Task Runner，处理layer tree，将其转换成为GPU命令并发送到GPU。
 
 VSync信号到来，状态发生变化，会走完整的渲染流水线动作：**动画（Animate）、构建（Build）、布局（Layout）和绘制（Paint）**，最终输出layer tree被送入engine，通过engine调度GPU绘制到屏幕上。
 
