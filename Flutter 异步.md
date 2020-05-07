@@ -14,7 +14,7 @@ Dart 是单线程的，并且 Flutter 依赖于 Dart，Dart 同一时刻只执�
 2. 当上面方法执行完成后，执行 main() 方法
 3. 启动事件循环
 
-![image](https://note.youdao.com/yws/res/67073/D5C5AC8E3852400D80F7B59F4DE1EF75)
+![image](https://github.com/LiangLuDev/flutter_tutorial/blob/master/images/flutter_future.png?raw=true)
 
 事件循环是一种无限循环，由一个内部时钟控制，在一个时钟周期内，如果没有其它 Dart 代码执行，则执行下面操作
 
