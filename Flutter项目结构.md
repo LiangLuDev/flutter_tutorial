@@ -29,7 +29,7 @@ version: 1.0.0+1
 ```
 flutter:
     assets:
-        - images/flutter.png
+        - images/
 ```
 Flutter中使用资源文件
 ```
